@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1523663566 source:c:\users\laura\desktop\programacion_1\tp-tritto\func.c
+	<stdio.h>
+	<stdlib.h>
+
+1523671850 source:c:\users\laura\desktop\programacion_1\tp-tritto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"func.h"
+
+1523663397 c:\users\laura\desktop\programacion_1\tp-tritto\func.h
+
