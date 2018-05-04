@@ -1,0 +1,85 @@
+# depslib dependency file v1.0
+1525228706 source:c:\users\laura\desktop\tp_2\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"FUNCIONES.h"
+	<string.h>
+
+1525210465 c:\users\laura\desktop\tp_2\tp_2_cascara\funciones.h
+
+1525228706 source:c:\users\laura\desktop\tp_2\tp_2_cascara\funciones.c
+	"funciones.h"
+	<string.h>
+	"FUNCIONES.h"
+	<string.h>
+	<stdio.h>
+
+1524440419 source:c:\users\laura\desktop\tp_2\tp_2_cascara\funciones (2).c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1525231216 source:c:\users\alumno\desktop\tp_2\tp_2_cascara\funciones (2).c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1525280886 source:c:\users\alumno\desktop\tp_2\tp_2_cascara\funciones.c
+	"funciones.h"
+	<string.h>
+	"FUNCIONES.h"
+	<string.h>
+	<stdio.h>
+
+1525280895 c:\users\alumno\desktop\tp_2\tp_2_cascara\funciones.h
+
+1525280886 source:c:\users\alumno\desktop\tp_2\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"FUNCIONES.h"
+	<string.h>
+
+1525462001 source:c:\users\laura\desktop\tp_2 bueno\tp_2_cascara\funciones (2).c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1525462992 source:c:\users\laura\desktop\tp_2 bueno\tp_2_cascara\funciones.c
+	"funciones.h"
+	<string.h>
+	"FUNCIONES.h"
+	<string.h>
+	<stdio.h>
+
+1525462798 c:\users\laura\desktop\tp_2 bueno\tp_2_cascara\funciones.h
+
+1525463116 source:c:\users\laura\desktop\tp_2 bueno\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"FUNCIONES.h"
+	<string.h>
+
+1525462001 source:c:\users\laura\desktop\tp_2bueno\tp_2_cascara\funciones (2).c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1525469081 source:c:\users\laura\desktop\tp_2bueno\tp_2_cascara\funciones.c
+	"funciones.h"
+	<string.h>
+	"FUNCIONES.h"
+	<string.h>
+	<stdio.h>
+
+1525462798 c:\users\laura\desktop\tp_2bueno\tp_2_cascara\funciones.h
+
+1525463116 source:c:\users\laura\desktop\tp_2bueno\tp_2_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"FUNCIONES.h"
+	<string.h>
+
