@@ -78,11 +78,11 @@ int Cliente_alta(Cliente* array,int limite)
         {
             retorno = -3;
             id = proximoId();
-            if(!getValidString("Nombre?","Error","Overflow", nombre,50,2))
+            if(!getValidString("Nombre?","Error\n","Overflow\n", nombre,50,2))
             {
-                if(!getValidString("Apellido?","Error","Overflow", apellido,50,2))
+                if(!getValidString("Apellido?","Error\n","Overflow\n", apellido,50,2))
                 {
-                    if(!getValidCuit("cuit?","Error","Overflow", cuit,13,2))
+                    if(!getValidCuit("cuit?","Error\n","Overflow\n", cuit,8,13,2))
                     {
                         retorno = 0;
                         strcpy(array[indice].nombre,nombre);

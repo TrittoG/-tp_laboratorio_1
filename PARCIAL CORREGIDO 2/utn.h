@@ -25,7 +25,7 @@ int getStringNumerosFlotantes(char mensaje[],char input[]);
 int getValidString(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps);
 int getValidInt(char requestMessage[],char errorMessage[], int* input,int lowLimit, int hiLimit,int attemps);
 int getValidFloat(char requestMessage[],char errorMessage[], float* input,float lowLimit, float hiLimit,int attemps);
-int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps);
+int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[],int minLength, int maxLenght,int attemps);
 
 
 void clearStdin(void);

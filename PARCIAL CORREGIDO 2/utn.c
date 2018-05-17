@@ -453,7 +453,7 @@ int pedirDNI(char *str, char *mensaje, char *error, int intentos)
 
 }
 
-int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps)
+int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[],int minLength, int maxLenght,int attemps)
 {
     int i;
     int retorno=-1;
@@ -466,7 +466,7 @@ int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLen
             printf ("%s",errorMessage);
             continue;
         }
-        if(strlen(buffer) >= maxLenght)
+        if(strlen(buffer) >= maxLenght || strlen(buffer)<minLength)
         {
             printf ("%s",errorMessageLenght);
             continue;
