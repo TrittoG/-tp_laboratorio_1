@@ -219,3 +219,50 @@
 	<string.h>
 	"utn.h"
 
+1526574120 source:c:\users\giuli\desktop\parcial corregido 2\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Fantasma.h"
+	"utn.h"
+
+1526574120 c:\users\giuli\desktop\parcial corregido 2\fantasma.h
+
+1526414144 c:\users\giuli\desktop\parcial corregido 2\utn.h
+
+1526413173 source:c:\users\giuli\desktop\parcial corregido 2\fantasmados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasmaDos.h"
+	"utn.h"
+
+1525997074 c:\users\giuli\desktop\parcial corregido 2\fantasmados.h
+
+1526583037 source:c:\users\giuli\desktop\parcial corregido 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"fantasmaDos.h"
+	"utn.h"
+	"informar.h"
+
+1526578981 c:\users\giuli\desktop\parcial corregido 2\informar.h
+
+1526414130 source:c:\users\giuli\desktop\parcial corregido 2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1526587693 source:c:\users\giuli\desktop\parcial corregido 2\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasmaDos.h"
+	"fantasma.h"
+	"utn.h"
+

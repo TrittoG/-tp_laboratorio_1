@@ -136,7 +136,7 @@ int Publicacion_alta(Publicacion* array,int limite, Cliente *arrayC, int limiteC
                                 array[indice].idPublicacion = id;
                                 array[indice].isEmpty = OCUPADO;
                                 array[indice].estado = ACTIVO;
-                                printf("Texto: %s  IdCliente: %d\n", array[indice].textoAviso, array[indice].idCliente);
+                                printf("Texto: %s  IdCliente: %d\n", array[indice].textoAviso, arrayC[indice].idCliente);
 
                             }
                         }
@@ -147,7 +147,6 @@ int Publicacion_alta(Publicacion* array,int limite, Cliente *arrayC, int limiteC
     }
     return retorno;
 }
-
 
 int publicacion_reanudar(Publicacion *arrayP, int cantidad_publicaciones, Cliente *arrayC, int lim_cliente)
 {
@@ -212,7 +211,7 @@ int publicaciones_mostrar(Cliente* array,int limite, Publicacion *arrayP, int li
         {
             if(!arrayP[i].isEmpty && arrayP[i].estado == ACTIVO)
             {
-                index = idPublicacionesCliente(array,limite,arrayP,limite_publicacion,array[i].idCliente);
+                index = idPublicacionesCliente(array,limite,arrayP,limite_publicacion,arrayP[i].idCliente);
 
                 printf("TEXTO: %s - RUBRO %d - ID %d - cuit del cliente: %s\n", arrayP[i].textoAviso, arrayP[i].rubro,arrayP[i].idPublicacion,array[index].cuit );
                 publi = 1;
