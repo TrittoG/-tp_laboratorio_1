@@ -452,3 +452,29 @@ int pedirDNI(char *str, char *mensaje, char *error, int intentos)
     return 1;
 
 }
+
+int getValidCuit(char requestMessage[],char errorMessage[], char errorMessageLenght[],char input[], int maxLenght,int attemps)
+{
+    int i;
+    int retorno=-1;
+    char buffer[1024];
+
+    for(i=0;i<attemps;i++)
+    {
+        if (!getString(requestMessage,buffer))
+        {
+            printf ("%s",errorMessage);
+            continue;
+        }
+        if(strlen(buffer) >= maxLenght)
+        {
+            printf ("%s",errorMessageLenght);
+            continue;
+
+        }
+        retorno=0;
+        strcpy(input,buffer);
+        break;
+    }
+    return retorno;
+}

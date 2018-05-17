@@ -97,7 +97,7 @@ int Cliente_alta(Cliente* array,int limite)
             {
                 if(!getValidString("Apellido?","Error","Overflow", apellido,50,2))
                 {
-                    if(!getValidString("cuit?","Error","Overflow", cuit,50,2))
+                    if(!getValidCuit("cuit?","Error","Overflow", cuit,13,2))
                     {
                         retorno = 0;
                         strcpy(array[indice].nombre,nombre);
