@@ -266,7 +266,7 @@
 	"fantasma.h"
 	"utn.h"
 
-1526591986 source:c:\users\alumno\desktop\parcial corregido 2\fantasma.c
+1526593464 source:c:\users\alumno\desktop\parcial corregido 2\fantasma.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -286,7 +286,7 @@
 
 1526592935 c:\users\alumno\desktop\parcial corregido 2\fantasmados.h
 
-1526591986 source:c:\users\alumno\desktop\parcial corregido 2\utn.c
+1526593464 source:c:\users\alumno\desktop\parcial corregido 2\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>

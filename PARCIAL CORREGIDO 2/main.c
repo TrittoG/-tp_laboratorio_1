@@ -16,7 +16,7 @@ int main()
 
     int menu;
     int auxiliarId;
-
+    int resultado;
 
     Cliente_init(arrayC,QTY);
     Publicacion_init(arrayP,QTY_PUB);
@@ -26,50 +26,204 @@ int main()
         switch(menu)
         {
             case 1:
-                Cliente_alta(arrayC,QTY);
+                resultado = Cliente_alta(arrayC,QTY);
+                if(resultado == -1)
+                {
+                    printf("Error en el array o su cantidad");
+                }
+                else
+                {
+                   if(resultado == -2)
+                   {
+                       printf("indice invalido");
+                   }
+                   else
+                    {
+                        if(resultado == -3)
+                        {
+                            printf("mal pasados los datos");
+                        }
+                        else
+                        {
+                            if(resultado == 0)
+                            {
+                                printf("Creado ");
+                            }
+                        }
+                    }
+                }
                 break;
             case 2:
                 getValidInt("ID?","\nNumero valida\n",&auxiliarId,0,200,2);
-                Cliente_baja(arrayC,QTY,auxiliarId);
+                resultado = Cliente_baja(arrayC,QTY,auxiliarId);
+                if(resultado == -1)
+                {
+                    printf("mal parametros");
+                }
+                else
+                {
+                    if(resultado == -2)
+                    {
+                        printf("Indice invalido");
+                    }
+                    else
+                    {
+                        if(resultado == 0)
+                            printf("baja correctamente");
+                    }
+                }
+
                 break;
             case 3:
                 getValidInt("ID?","\nNumero valida\n",&auxiliarId,0,200,2);
-                Cliente_modificacion(arrayC,QTY,auxiliarId);
+                resultado = Cliente_modificacion(arrayC,QTY,auxiliarId);
+                if(resultado == -1)
+                {
+                    printf("Error en el array o su cantidad");
+                }
+                else
+                {
+                   if(resultado == -2)
+                   {
+                       printf("indice  invalido");
+                   }
+                   else
+                    {
+                        if(resultado == -3)
+                        {
+                            printf("No se completaron bien los datos");
+                        }
+                        else
+                        {
+                            if(resultado == 0)
+                            {
+                                printf("Modificado");
+                            }
+                        }
+                    }
+                }
                 break;
             case 4:
-                Publicacion_alta(arrayP,QTY_PUB,arrayC, QTY );
+                resultado = Publicacion_alta(arrayP,QTY_PUB,arrayC, QTY );
+                if(resultado == -1)
+                {
+                    printf("Se pasaron mal los parametros");
+                }
+                else
+                {
+                    if(resultado == -2)
+                    {
+                        printf("Error en el indice donde guardar");
+                    }
+                    else
+                    {
+                        if(resultado == -3)
+                        {
+                            printf("Los datos no son validos");
+                        }
+                        else
+                        {
+                            if(resultado == 0)
+                            {
+                                printf("Publicacion creada correctamente");
+                            }
+                        }
+                    }
+                }
 
                 break;
             case 5:
-                publicacion_pausar(arrayP, QTY_PUB , arrayC, QTY);
+                resultado = publicacion_pausar(arrayP, QTY_PUB , arrayC, QTY);
+                if(resultado == -1)
+                {
+                    printf("Se pasaron mal los parametros");
+                }
+                else
+                {
+                    if(resultado == -2)
+                    {
+                        printf("Error en el indice donde guardar");
+                    }
+                    else
+                    {
+                        if(resultado == -3)
+                        {
+                            printf("Los datos no son validos");
+                        }
+                        else
+                        {
+                            if(resultado == 0)
+                            {
+                                printf("Publicacion pausada");
+                            }
+                        }
+                    }
+                }
 
                 break;
             case 6:
-                publicacion_reanudar(arrayP, QTY_PUB,arrayC, QTY);
+                resultado = publicacion_reanudar(arrayP, QTY_PUB,arrayC, QTY);
+                if(resultado == -1)
+                {
+                    printf("Se le pasaron mal los parametros");
+                }
+
                 break;
             case 7 :
-                Cliente_mostrar(arrayC,QTY,arrayP, QTY_PUB);
+                resultado = Cliente_mostrar(arrayC,QTY,arrayP, QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("Se le pasaron mal los parametros");
+                }
                 break;
             case 8 :
-                publicaciones_mostrar(arrayC,QTY, arrayP, QTY_PUB);
+                resultado = publicaciones_mostrar(arrayC,QTY, arrayP, QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("Se le pasaron mal los parametros");
+                }
                 break;
             case 10 :
-                informar_clienteConMasAvisosActivos(arrayC,QTY,arrayP,QTY_PUB);
+                resultado = informar_clienteConMasAvisosActivos(arrayC,QTY,arrayP,QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("pasaron mal los parametros");
+                }
                 break;
             case 11 :
-                informar_clienteConMasAvisosPausados(arrayC,QTY,arrayP,QTY_PUB);
+                resultado = informar_clienteConMasAvisosPausados(arrayC,QTY,arrayP,QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("pasaron mal los parametros");
+                }
                 break;
             case 12 :
-                informar_clienteConMasAvisos(arrayC,QTY,arrayP,QTY_PUB);
+                resultado = informar_clienteConMasAvisos(arrayC,QTY,arrayP,QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("pasaron mal los parametros");
+                }
                 break;
             case 13 :
-                cantidadPublicacionRubroIngresado(arrayP, QTY_PUB);
+                resultado = cantidadPublicacionRubroIngresado(arrayP, QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("pasaron mal los parametros");
+                }
                 break;
             case 14 :
                 rubroMasPublicacionesActivas(arrayP, QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("pasaron mal los parametros");
+                }
                 break;
             case 15 :
-                rubroMenosPublicacionesActivas(arrayP, QTY_PUB);
+                resultado = rubroMenosPublicacionesActivas(arrayP, QTY_PUB);
+                if(resultado == -1)
+                {
+                    printf("pasaron mal los parametros");
+                }
                 break;
 
 

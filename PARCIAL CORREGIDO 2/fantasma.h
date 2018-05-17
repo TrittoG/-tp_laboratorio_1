@@ -71,6 +71,14 @@ int Cliente_alta(Cliente* array,int limite);
 int Cliente_modificacion(Cliente* array,int limite, int id);
 
 
+/** \brief
+ *
+ * \param array Cliente*
+ * \param limite int
+ * \param orden int
+ * \return int
+ *
+ */
 int Cliente_ordenar(Cliente* array,int limite, int orden);
 
 
