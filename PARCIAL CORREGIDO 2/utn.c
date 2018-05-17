@@ -317,7 +317,7 @@ int getValidString(char requestMessage[],char errorMessage[], char errorMessageL
 
     for(i=0;i<attemps;i++)
     {
-        if (!getString(requestMessage,buffer))
+        if (!getStringLetras(requestMessage,buffer))
         {
             printf ("%s",errorMessage);
             continue;
