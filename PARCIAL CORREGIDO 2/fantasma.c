@@ -58,21 +58,6 @@ int Cliente_baja(Cliente* array,int limite, int id)
     return retorno;
 }
 
-int Cliente_mostrarDebug(Cliente* array,int limite)
-{
-    int retorno = -1;
-    int i;
-    if(limite > 0 && array != NULL)
-    {
-        retorno = 0;
-        for(i=0;i<limite;i++)
-        {
-            if(array[i].isEmpty != 1)
-            printf("\n[DEBUG] %s - %d - %d",array[i].nombre,array[i].idCliente,array[i].isEmpty);
-        }
-    }
-    return retorno;
-}
 
 
 int Cliente_alta(Cliente* array,int limite)

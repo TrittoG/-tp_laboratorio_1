@@ -41,12 +41,12 @@ int Publicacion_buscarPorId(Publicacion* array,int limite, int id);
  * \return int
  *
  */
-int Publicacion_baja(Publicacion* array,int limite, int id);
 
-int Publicacion_mostrar(Publicacion* array,int limite);
-int Publicacion_mostrarDebug(Publicacion* array,int limite);
-int Publicacion_modificacion(Publicacion* array,int limite, int id);
-int Publicacion_ordenar(Publicacion* array,int limite, int orden);
+
+
+
+
+
 
 
 

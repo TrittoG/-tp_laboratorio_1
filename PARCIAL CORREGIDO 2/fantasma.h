@@ -47,7 +47,6 @@ int Cliente_buscarPorId(Cliente* array,int limite, int id);
 int Cliente_baja(Cliente* array,int limite, int id);
 
 
-int Cliente_mostrarDebug(Cliente* array,int limite);
 
 
 /** \brief da de alta un nuevo cliente
