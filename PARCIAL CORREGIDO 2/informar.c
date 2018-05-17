@@ -285,10 +285,11 @@ int informar_clienteConMasAvisosPausados(Cliente* arrayC,int limite, Publicacion
     int maximo = 0;
     int contador = 0;
     int j;
+    int retorno=-1;
 
     if(arrayC != NULL && limite >0)
     {
-
+        retorno = -2;
         for(i=0;i<limite;i++)
         {
             if(!arrayC[i].isEmpty)
@@ -302,7 +303,11 @@ int informar_clienteConMasAvisosPausados(Cliente* arrayC,int limite, Publicacion
                 for(j=0;j<limite_publicacion;j++)
                 {
                     if(!arrayP[j].isEmpty && arrayP[j].idCliente == arrayC[i].idCliente && arrayP[j].estado == PAUSADO)
-                    contador++;
+                    {
+                        contador++;
+                        retorno =0;
+                    }
+
                 }
 
             }
@@ -310,7 +315,7 @@ int informar_clienteConMasAvisosPausados(Cliente* arrayC,int limite, Publicacion
         }
     }
     printf("El cliente con mas avisos pausados es: %s, con %d avisos\n", arrayC[indice].nombre, maximo);
-    return 0;
+    return retorno;
 }
 
 
@@ -325,6 +330,7 @@ int informar_clienteConMasAvisos(Cliente* arrayC,int limite, Publicacion *arrayP
     int retorno = -1;
     if(arrayC != NULL && arrayP != NULL && limite > 0 && limite_publicacion > 0)
     {
+        retorno = -2;
         for(i=0;i<limite;i++)
         {
             if(contador > maximo)
@@ -352,14 +358,18 @@ int cantidadPublicacionRubroIngresado(Publicacion *arrayP, int limiteP)
     int i;
     int rubro;
     int contador = 0;
+    int retorno = -1;
     getValidInt("Rubro?", "Error", &rubro, 0, 100, 2);
     for(i=0;i<limiteP;i++)
-    {
+    {   retorno = -2;
         if(!arrayP[i].isEmpty && arrayP[i].rubro == rubro)
-            contador++;
+        {
+             contador++;
+            retorno = 0;
+        }
     }
     printf("El rubro elegido tiene %d publicaciones\n", contador);
-    return 0;
+    return retorno;
 }
 
 
@@ -371,8 +381,10 @@ int rubroMasPublicacionesActivas(Publicacion *arrayP, int limiteP)
     int maximo = 0;
     int contador = 0;
     int j;
+    int retorno=-1;
     for(i=0;i<limiteP;i++)
     {
+        retorno =-2;
         if(contador > maximo)
         {
             maximo = contador;
@@ -382,12 +394,15 @@ int rubroMasPublicacionesActivas(Publicacion *arrayP, int limiteP)
         for(j=i+1;j<limiteP;j++)
         {
             if(!arrayP[j].isEmpty && arrayP[j].estado && arrayP[j].rubro == arrayP[i].rubro)
-                contador++;
+               {
+                 contador++;
+                retorno=0;
+               }
         }
     }
 
     printf("El rubro con mas avisos activos es: %d, con %d avisos\n", arrayP[indice].rubro, maximo);
-    return 0;
+    return retorno;
 }
 
 
@@ -398,21 +413,29 @@ int rubroMenosPublicacionesActivas(Publicacion *arrayP, int limiteP)
     int maximo = 0;
     int contador = 0;
     int j;
-    for(i=0;i<limiteP;i++)
+    int retorno= -1;
+
+    if(arrayP != NULL && limiteP > 0)
     {
-        if(contador < maximo)
+        retorno = -2;
+         for(i=0;i<limiteP;i++)
         {
-            maximo = contador;
-            indice = i - 1;
-        }
-        contador = 0;
-        for(j=i+1;j<limiteP;j++)
-        {
-            if(!arrayP[j].isEmpty && arrayP[j].estado && arrayP[j].rubro == arrayP[i].rubro)
+            if(contador < maximo)
+            {
+                maximo = contador;
+                indice = i - 1;
+            }
+            contador = 0;
+            for(j=i+1;j<limiteP;j++)
+            {
+                if(!arrayP[j].isEmpty && arrayP[j].estado && arrayP[j].rubro == arrayP[i].rubro)
                 contador++;
+                retorno = 0;
+            }
         }
     }
 
+
     printf("El rubro con mas avisos activos es: %d, con %d avisos\n", arrayP[indice].rubro, maximo);
-    return 0;
+    return retorno;
 }

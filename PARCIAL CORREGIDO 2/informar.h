@@ -72,14 +72,57 @@ int publicaciones_mostrar(Cliente* array,int limite, Publicacion *arrayP, int li
  */
 int informar_clienteConMasAvisosActivos(Cliente* arrayC,int limite, Publicacion *arrayP, int limite_publicacion);
 
+/** \brief informa los clientes con mas avisos pausados
+ *
+ * \param arrayC Cliente*
+ * \param limite int
+ * \param arrayP Publicacion*
+ * \param limite_publicacion int
+ * \return int 0 si todo esta correcto -1 si el array es nulo -2 si no hay espacio
+ *
+ */
 int informar_clienteConMasAvisosPausados(Cliente* arrayC,int limite, Publicacion *arrayP, int limite_publicacion);
 
+/** \brief informa e cliente con mas avisos
+ *
+ * \param arrayC Cliente*
+ * \param limite int
+ * \param arrayP Publicacion*
+ * \param limite_publicacion int
+ * \return int 0 si todo esta correcto, -1 si el array es nulo -2 si no hay espacio
+ *
+ */
 int informar_clienteConMasAvisos(Cliente* arrayC,int limite, Publicacion *arrayP, int limite_publicacion);
 
+
+/** \brief informa la cantidad de publicaciones de un rubro ingresado por el usuario
+ *
+ * \param arrayP Publicacion*
+ * \param limiteP int
+ * \return int 0 si todo esta correcto, -1 si el array es nulo, -2 si no hay espacio en el array
+ *
+ */
 int cantidadPublicacionRubroIngresado(Publicacion *arrayP, int limiteP);
 
+
+/** \brief debuelve el rubro que mas publicaciones activas tenga
+ *
+ * \param arrayP Publicacion*
+ * \param limiteP int
+ * \return int 0 si todo esta correcto, -1 si el array es nulo, -2 si no hay espacio en el array
+ *
+ */
 int rubroMasPublicacionesActivas(Publicacion *arrayP, int limiteP);
 
+
+
+/** \brief informa el rubro con menos publicaciones activas
+ *
+ * \param arrayP Publicacion*
+ * \param limiteP int
+ * \return int 0 si todo esta correcto, -1 si el array es nulo, -2 si no hay espacio en el array
+ *
+ */
 int rubroMenosPublicacionesActivas(Publicacion *arrayP, int limiteP);
 
 /** \brief devuelve el cliente cuyo id tiene una publicacion

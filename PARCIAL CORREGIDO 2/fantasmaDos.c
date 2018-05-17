@@ -9,8 +9,7 @@
 #define PAUSADO 2
 #define ACTIVO 1
 
-static int buscarLugarLibre(Publicacion* array,int limite);
-static int proximoId();
+
 
 int Publicacion_init(Publicacion* array,int limite)
 {
@@ -46,19 +45,6 @@ int Publicacion_buscarPorId(Publicacion* array,int limite, int id)
     return retorno;
 }
 
-int Publicacion_baja(Publicacion* array,int limite, int id)
-{
-
-    int retorno = -1;
-    int indice;
-    indice = Publicacion_buscarPorId(array,limite,id);
-    if(indice >= 0)
-    {
-        retorno = 0;
-        array[indice].isEmpty = LIBRE;
-    }
-    return retorno;
-}
 
 
 

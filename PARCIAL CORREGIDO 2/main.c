@@ -17,6 +17,7 @@ int main()
     int menu;
     int auxiliarId;
 
+
     Cliente_init(arrayC,QTY);
     Publicacion_init(arrayP,QTY_PUB);
     do

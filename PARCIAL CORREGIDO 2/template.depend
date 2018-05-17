@@ -266,3 +266,50 @@
 	"fantasma.h"
 	"utn.h"
 
+1526591986 source:c:\users\alumno\desktop\parcial corregido 2\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Fantasma.h"
+	"utn.h"
+
+1526591986 c:\users\alumno\desktop\parcial corregido 2\fantasma.h
+
+1526591986 c:\users\alumno\desktop\parcial corregido 2\utn.h
+
+1526592935 source:c:\users\alumno\desktop\parcial corregido 2\fantasmados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasmaDos.h"
+	"utn.h"
+
+1526592935 c:\users\alumno\desktop\parcial corregido 2\fantasmados.h
+
+1526591986 source:c:\users\alumno\desktop\parcial corregido 2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1526592470 source:c:\users\alumno\desktop\parcial corregido 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"fantasmaDos.h"
+	"utn.h"
+	"informar.h"
+
+1526592635 c:\users\alumno\desktop\parcial corregido 2\informar.h
+
+1526592635 source:c:\users\alumno\desktop\parcial corregido 2\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasmaDos.h"
+	"fantasma.h"
+	"utn.h"
+
