@@ -253,10 +253,12 @@ int informar_clienteConMasAvisosActivos(Cliente* arrayC,int limite, Publicacion 
     int indice;
     int maximo = 0;
     int contador = 0;
+    int retorno = -1;
     int j;
 
     if(arrayC != NULL && limite >0)
     {
+        retorno = -2;
         for(i=0;i<limite;i++)
         {
             if(contador > maximo)
@@ -269,13 +271,20 @@ int informar_clienteConMasAvisosActivos(Cliente* arrayC,int limite, Publicacion 
             {
                 if(!arrayP[j].isEmpty && arrayP[j].idCliente == arrayC[i].idCliente && arrayP[j].estado && arrayP[j].estado == ACTIVO)
                 contador++;
+                retorno = 0;
             }
         }
 
     }
-
-    printf("El cliente con mas avisos activos es: %s, con %d avisos\n", arrayC[indice].nombre, maximo);
-    return 0;
+    if(contador > 0)
+    {
+        printf("El cliente con mas avisos activos es: %s, con %d avisos\n", arrayC[indice].nombre, maximo);
+    }
+    else
+    {
+        printf("no hay nadie con avisos activos\n");
+    }
+    return retorno;
 }
 
 int informar_clienteConMasAvisosPausados(Cliente* arrayC,int limite, Publicacion *arrayP, int limite_publicacion)
@@ -314,7 +323,15 @@ int informar_clienteConMasAvisosPausados(Cliente* arrayC,int limite, Publicacion
 
         }
     }
-    printf("El cliente con mas avisos pausados es: %s, con %d avisos\n", arrayC[indice].nombre, maximo);
+    if(contador > 0)
+    {
+        printf("El cliente con mas avisos pausados es: %s, con %d avisos\n", arrayC[indice].nombre, maximo);
+    }
+    else
+    {
+        printf("no hay nadie con avisos pausados..\n");
+    }
+
     return retorno;
 }
 
@@ -347,8 +364,14 @@ int informar_clienteConMasAvisos(Cliente* arrayC,int limite, Publicacion *arrayP
             }
         }
     }
-    if(retorno == 0)
+    if(retorno == 0 && contador >0)
+    {
         printf("El cliente con mas avisos es: %s, con %d avisos\n", arrayC[indice].nombre, maximo);
+    }
+    else if(retorno == 0 && contador ==0)
+    {
+        printf("no hay avisos activos\n");
+    }
     return retorno;
 }
 
@@ -368,7 +391,15 @@ int cantidadPublicacionRubroIngresado(Publicacion *arrayP, int limiteP)
             retorno = 0;
         }
     }
-    printf("El rubro elegido tiene %d publicaciones\n", contador);
+    if(contador >0)
+    {
+        printf("El rubro elegido tiene %d publicaciones\n", contador);
+    }
+    else
+    {
+        printf("no hay publicacines para el rubro elejido\n");
+    }
+
     return retorno;
 }
 
@@ -400,8 +431,14 @@ int rubroMasPublicacionesActivas(Publicacion *arrayP, int limiteP)
                }
         }
     }
-
-    printf("El rubro con mas avisos activos es: %d, con %d avisos\n", arrayP[indice].rubro, maximo);
+    if(contador >0)
+    {
+        printf("El rubro con mas avisos activos es: %d, con %d avisos\n", arrayP[indice].rubro, maximo);
+    }
+    else
+    {
+        printf("no hay publicaciones activas");
+    }
     return retorno;
 }
 

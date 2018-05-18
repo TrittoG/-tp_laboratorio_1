@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1526595327 source:c:\users\alumno\desktop\parcial corregido 2\fantasma.c
+1526601504 source:c:\users\alumno\desktop\parcial corregido 2\fantasma.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -19,7 +19,7 @@
 
 1526594655 c:\users\alumno\desktop\parcial corregido 2\fantasmados.h
 
-1526592635 source:c:\users\alumno\desktop\parcial corregido 2\informar.c
+1526602070 source:c:\users\alumno\desktop\parcial corregido 2\informar.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -27,7 +27,7 @@
 	"fantasma.h"
 	"utn.h"
 
-1526594033 source:c:\users\alumno\desktop\parcial corregido 2\main.c
+1526598115 source:c:\users\alumno\desktop\parcial corregido 2\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>

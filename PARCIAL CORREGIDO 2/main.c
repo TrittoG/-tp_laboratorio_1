@@ -20,6 +20,8 @@ int main()
 
     Cliente_init(arrayC,QTY);
     Publicacion_init(arrayP,QTY_PUB);
+
+
     do
     {
         getValidInt("\n1.Alta\n2.Baja\n3.Modificar\n4.Publicar\n5.Pausar Publicacion\n6.reanudar publicacion\n7.mostrar clientes\n8.mostrar publicaciones\n9.Salir\n10.El cliente con mas avisos activos\n11.El cliente con mas avisos pausados\n12.el cliente con mas avisos\n13.cant publicaciones de un rubro\n14.rubro con mas publicaciones activas\n15.rubro con menos publicaciones activas\n","\nNo valida\n",&menu,1,15,1);

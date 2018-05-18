@@ -44,19 +44,6 @@ int Cliente_buscarPorId(Cliente* array,int limite, int id)
     return retorno;
 }
 
-int Cliente_baja(Cliente* array,int limite, int id)
-{
-
-    int retorno = -1;
-    int indice;
-    indice = Cliente_buscarPorId(array,limite,id);
-    if(indice >= 0)
-    {
-        retorno = 0;
-        array[indice].isEmpty = LIBRE;
-    }
-    return retorno;
-}
 
 
 
@@ -163,6 +150,19 @@ static int proximoId()
 }
 
 
+int Cliente_baja(Cliente* array,int limite, int id)
+{
+
+    int retorno = -1;
+    int indice;
+    indice = Cliente_buscarPorId(array,limite,id);
+    if(indice >= 0)
+    {
+        retorno = 0;
+        array[indice].isEmpty = LIBRE;
+    }
+    return retorno;
+}
 
 int Cliente_ordenar(Cliente* array,int limite, int orden)
 {
