@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1527545234 source:c:\users\nico\desktop\tp3\tp_3_cascara\funciones.c
+	"movie.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1527551451 source:c:\users\nico\desktop\tp3\tp_3_cascara\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1527196444 c:\users\nico\desktop\tp3\tp_3_cascara\utn.h
+
+1527552962 source:c:\users\nico\desktop\tp3\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"movie.h"
+	"utn.h"
+
+1527540436 c:\users\nico\desktop\tp3\tp_3_cascara\funciones.h
+	"movie.h"
+
+1527544101 c:\users\nico\desktop\tp3\tp_3_cascara\movie.h
+
+1527552929 source:c:\users\nico\desktop\tp3\tp_3_cascara\movie.c
+	"movie.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1528168115 source:c:\users\giuli\desktop\tp3\tp_3_cascara\funciones.c
+	"movie.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1528168220 c:\users\giuli\desktop\tp3\tp_3_cascara\movie.h
+
+1527196444 c:\users\giuli\desktop\tp3\tp_3_cascara\utn.h
+
+1528167684 source:c:\users\giuli\desktop\tp3\tp_3_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	"movie.h"
+	"utn.h"
+
+1528168184 c:\users\giuli\desktop\tp3\tp_3_cascara\funciones.h
+	"movie.h"
+
+1527551452 source:c:\users\giuli\desktop\tp3\tp_3_cascara\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1528168389 source:c:\users\giuli\desktop\tp3\tp_3_cascara\movie.c
+	"movie.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
