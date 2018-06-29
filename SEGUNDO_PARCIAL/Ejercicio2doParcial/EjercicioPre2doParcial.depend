@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1530223717 source:d:\tritto\segundo_parcial\ejercicio2doparcial\empleado.c
+	"Empleado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1530223716 d:\tritto\segundo_parcial\ejercicio2doparcial\empleado.h
+
+1530229306 source:d:\tritto\segundo_parcial\ejercicio2doparcial\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+	"Empleado.h"
+
+1530228787 d:\tritto\segundo_parcial\ejercicio2doparcial\arraylist.h
+
+1530229418 source:d:\tritto\segundo_parcial\ejercicio2doparcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Empleado.h"
+	"ArrayList.h"
+	"Parser.h"
+
+1529584990 d:\tritto\segundo_parcial\ejercicio2doparcial\parser.h
+	"ArrayList.h"
+
+1530220942 source:d:\tritto\segundo_parcial\ejercicio2doparcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1530220942 d:\tritto\segundo_parcial\ejercicio2doparcial\utn.h
+
+1530226417 source:d:\tritto\segundo_parcial\ejercicio2doparcial\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"Empleado.h"
+	"ArrayList.h"
+	"Parser.h"
+
